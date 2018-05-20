@@ -1,0 +1,16 @@
+version: '2'
+services:
+  bb-techlab-experiment-socketsnake-container:
+    build: .
+    container_name: bb-techlab-experiment-socketsnake
+    command: bash -c "./start.sh"
+    ports:
+     - "3080:8080"
+     - "3030:3030"
+    volumes:
+     - .:/code
+     - ~/.ssh:/root/.ssh
+networks:
+  default:
+    external:
+      name: bb-techlab-experiment-socketsnake-network

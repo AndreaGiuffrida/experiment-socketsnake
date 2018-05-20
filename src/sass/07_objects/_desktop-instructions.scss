@@ -1,0 +1,9 @@
+.desktop-instructions {
+	background-color : s-color(dark-grey);
+	color: white;
+	@include s-font(code,
+		$size : s-rem(20px),
+		$align : center
+	);
+	padding: s-space(big);
+}

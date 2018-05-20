@@ -1,0 +1,23 @@
+.h1 {
+	@include s-font(
+		$size : s-rem(30px)
+	);
+}
+.h2 {
+	@include s-font(
+		$size : s-rem(24px)
+	);
+}
+.h3 {
+	@include s-font(
+		$size : s-rem(18px)
+	);
+}
+.h4 {
+	@include s-font(
+		$size : s-rem(12px)
+	);
+}
+.p {
+	line-height: 1.6;
+}

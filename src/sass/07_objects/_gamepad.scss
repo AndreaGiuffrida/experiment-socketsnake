@@ -1,0 +1,39 @@
+.gamepad {
+	width:100%; height:100%;
+	position:absolute;
+	top:0; left:0;
+	background-color: s-color(dark-grey);
+	background-image:url('../img/bkg-01.jpg');
+}
+	.gamepad__joystick {
+		position:absolute;
+		top:0; left:0;
+		width:50%; height:100%;
+	}
+	.gamepad__fire {
+		background:s-color(error);
+		position:absolute;
+		top:0; left:50%;
+		width:50%; height:50%;
+	}
+	.gamepad__accelerate {
+		background:s-color(success);
+		position:absolute;
+		top:50%; left:50%;
+		width:50%; height:50%;
+	}
+
+	.gamepad__label {
+		@include s-position(absolute, middle, center);
+		@include s-font(
+			$size : s-rem(18px),
+			$color : white
+		);
+	}
+
+	.gamepad__form {
+		@include s-position(absolute, middle, center);
+		background: white;
+		padding: s-space(default);
+		padding-top: s-space(medium);
+	}
